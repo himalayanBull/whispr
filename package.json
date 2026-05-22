@@ -1,0 +1,37 @@
+{
+  "name": "whispr",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:server": "npx tsx server/index.ts",
+    "dev:all": "npx concurrently \"npm run dev\" \"npm run dev:server\"",
+    "build": "next build",
+    "start": "npx tsx server.ts",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "framer-motion": "^12.39.0",
+    "ioredis": "^5.10.1",
+    "next": "^14.2.35",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "socket.io": "^4.8.3",
+    "socket.io-client": "^4.8.3",
+    "uuid": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18.3.29",
+    "@types/react-dom": "^18.3.7",
+    "@types/uuid": "^10.0.0",
+    "autoprefixer": "^10.5.0",
+    "concurrently": "^9.2.1",
+    "eslint": "^9",
+    "eslint-config-next": "14.2.35",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^3.4.19",
+    "tsx": "^4.22.3",
+    "typescript": "^5"
+  }
+}
